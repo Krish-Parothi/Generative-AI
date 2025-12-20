@@ -11,5 +11,6 @@ dependencies = [
     "langchain-classic>=1.0.0",
     "langchain-community>=0.4.1",
     "langchain-core>=1.2.4",
+    "langchain-google-genai>=4.1.2",
     "langchain-groq>=1.1.1",
 ]
