@@ -10,7 +10,7 @@ model = ChatGroq(
     api_key=os.getenv("GROQ_API_KEY"),
     temperature=1.5,
     streaming=True,
-    max_tokens=65533
+    max_tokens=1024
 )
 
 messages = [
