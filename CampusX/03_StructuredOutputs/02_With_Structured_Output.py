@@ -1,6 +1,6 @@
 from langchain_groq.chat_models import ChatGroq
 from dotenv import load_dotenv
-from typing import TypedDict, Annotated, Optional
+from typing import TypedDict, Annotated, Optional, Literal
 import os 
 
 load_dotenv()
@@ -19,9 +19,10 @@ class Review(TypedDict):
 
     key_themes: Annotated[list[str], "Write down all the key themes discussed in the review in a list."]
     summary:Annotated[str, "A Brief Summaary of the Review"]
-    sentiment: Annotated[str,"Return Sentiment of the Review whether Positive, Negative or Neutral"]
+    sentiment: Annotated[Literal["pos","neg"],"Return Sentiment of the Review whether Positive, Negative or Neutral"]
     pros: Annotated[Optional[list[str]],"Write Down all the pros inside the list."]
     cons: Annotated[Optional[list[str]],"Write Down all the cons inside the list."]
+    name: Annotated[Optional[str], "Write the Name of the Reviewer"]
 
 structured_model = model.with_structured_output(Review)
 
