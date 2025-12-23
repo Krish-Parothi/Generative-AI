@@ -14,4 +14,14 @@ model = ChatGroq(
     max_tokens=65533
 )
 
-model.invoke("")
+#Schema
+class Review(TypedDict):
+    summary:str
+    sentiment: str
+
+
+structured_model = model.with_structured_output(Review)
+
+result = structured_model.invoke("I Brought that product at home but cpu was working fine but gpu was working very bad i think i have done mistake buying this product.")
+
+print(result)
