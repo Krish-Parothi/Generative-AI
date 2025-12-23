@@ -44,5 +44,5 @@ S-Pen support is unique and useful
 Review by Krish Parothi''')
 
 print(result)
-print(result['summary'])
-print(result['sentiment'])
+print(result.name)
+print(result.summary)
