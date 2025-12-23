@@ -10,4 +10,5 @@ dependencies = [
     "langchain-community>=0.4.1",
     "langchain-core>=1.2.5",
     "langchain-groq>=1.1.1",
+    "pydantic[email]>=2.12.5",
 ]
