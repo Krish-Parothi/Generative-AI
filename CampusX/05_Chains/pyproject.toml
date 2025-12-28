@@ -1,0 +1,14 @@
+[project]
+name = "05-chains"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "grandalf>=0.8",
+    "langchain>=1.2.0",
+    "langchain-classic>=1.0.1",
+    "langchain-community>=0.4.1",
+    "langchain-core>=1.2.5",
+    "langchain-groq>=1.1.1",
+]
