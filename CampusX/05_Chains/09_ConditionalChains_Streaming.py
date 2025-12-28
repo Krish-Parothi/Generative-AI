@@ -62,6 +62,7 @@ chain = classifier_chain | branch_chain # final chain
 
 result = ""
 
+# Streaming
 for chunks in chain.stream({"feedback":"This is a Terrible phone"}):
     for ch in chunks:
         result += ch
