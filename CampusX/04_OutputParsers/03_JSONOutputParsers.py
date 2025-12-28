@@ -65,3 +65,6 @@ print(type(final_result))
 # Output: {'name': 'Lena Marlowe', 'age': 34, 'city': 'Cedarbrook'}
 # <class 'dict'>
 # Python JSON Objects Ko Dictionary k Jaise Treat Krta hai
+
+print(final_result['name'])
+# Output: Lena Marlowe
