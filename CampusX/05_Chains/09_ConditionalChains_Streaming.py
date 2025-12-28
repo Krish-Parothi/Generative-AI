@@ -58,8 +58,13 @@ branch_chain = RunnableBranch(
 
 chain = classifier_chain | branch_chain # final chain
 
-result = chain.invoke({"feedback":"This is a Wonderful phone"})
+# chain.invoke({"feedback":"This is a Terrible phone"})
 
-print(result)
+result = ""
+
+for chunks in chain.stream({"feedback":"This is a Terrible phone"}):
+    for ch in chunks:
+        result += ch
+        print(ch, end="", flush=True)
 
 chain.get_graph().print_ascii()
