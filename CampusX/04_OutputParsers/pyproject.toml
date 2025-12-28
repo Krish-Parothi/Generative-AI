@@ -9,4 +9,5 @@ dependencies = [
     "langchain-classic>=1.0.1",
     "langchain-community>=0.4.1",
     "langchain-core>=1.2.5",
+    "langchain-groq>=1.1.1",
 ]
