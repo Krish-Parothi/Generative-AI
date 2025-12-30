@@ -1,5 +1,4 @@
 1. Simple-Texted, Clean PDFs - PyPDFLoader. 
-
 2. Pdf with tables/columns - PDFPlumberLoader
 3. Scanned/Image PDFs - UnstructuredPDFLoader or AmazonTextractPDFLoader
 4. Need Layout and Image data - PyMuPDFLoader
