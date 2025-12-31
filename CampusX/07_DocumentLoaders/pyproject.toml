@@ -5,10 +5,16 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "beautifulsoup4>=4.14.3",
+    "bs4>=0.0.2",
+    "grandalf>=0.8",
     "langchain>=1.2.0",
     "langchain-classic>=1.0.1",
     "langchain-community>=0.4.1",
     "langchain-core>=1.2.5",
     "langchain-groq>=1.1.1",
     "pypdf>=6.5.0",
+    "requests>=2.32.5",
+    "selenium>=4.39.0",
+    "unstructured>=0.18.24",
 ]
