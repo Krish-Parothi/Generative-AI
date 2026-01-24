@@ -8,3 +8,5 @@ from langchain_huggingface import HuggingFaceEmbeddings
 from fastapi import FastAPI
 
 app = FastAPI()
+
+parser = StrOutputParser()
