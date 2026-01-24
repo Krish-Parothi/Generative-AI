@@ -10,3 +10,5 @@ from fastapi import FastAPI
 app = FastAPI()
 
 parser = StrOutputParser()
+
+model = ChatGroq()
